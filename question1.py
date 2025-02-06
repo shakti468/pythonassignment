@@ -1,11 +1,11 @@
 import re
 
 def check_password_strength(password):
-    # Minimum length
+    #For minimum length
     if len(password) < 8:
         return False
     
-    # Uppercase letter
+    #For uppercase letter
     has_upper = False
     for char in password:
         if char.isupper():
@@ -14,7 +14,7 @@ def check_password_strength(password):
     if not has_upper:
         return False
     
-    # Lowercase letter
+    #For lowercase letter
     has_lower = False
     for char in password:
         if char.islower():

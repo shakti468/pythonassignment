@@ -3,11 +3,13 @@ import shutil
 import sys
 from datetime import datetime
 
+# Function to append timestamp to a filename if file already exists
 def get_unique_filename(destination, filename):
     base_name, extension = os.path.splitext(filename)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     return f"{base_name}_{timestamp}{extension}"
 
+# Function to copy files from source to destination
 def backup_files(source, destination):
     # Check if source directory exists
     if not os.path.exists(source):
