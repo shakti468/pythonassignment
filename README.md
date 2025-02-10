@@ -18,7 +18,7 @@ A Python script that checks the strength of a given password based on the follow
 ### Usage
 Run the script and enter a password when prompted:
 ```sh
-python password_checker.py
+ python .\question1.py
 ```
 
 ### Example Input and Output
@@ -39,6 +39,18 @@ Enter a password to check its strength: weakpass
 ```
 Weak password! Please provide a password that has at least 8 characters, uppercase & lowercase letters, a digit, and a special character.
 ```
+## Screenshot
+
+## Code:
+![image](https://github.com/user-attachments/assets/c4787446-2ceb-4fc7-8919-6385be7d7cf3)
+
+
+
+## Output:
+![image](https://github.com/user-attachments/assets/cee8ef26-f0c7-405e-bfc3-2c6011dc6e7d)
+
+
+
 
 ## 2. CPU Usage Monitor
 
@@ -54,17 +66,30 @@ pip install psutil
 ### Usage
 Run the script:
 ```sh
-python cpu_monitor.py
+python .\question2.py
 ```
 
 ### Example Output
 ```
 Monitoring CPU usage...
-Current CPU usage: 45%
-Current CPU usage: 78%
-Alert! CPU usage exceeds threshold: 85%
-Alert! CPU usage exceeds threshold: 90%
+Current CPU usage: 9.7%
+Current CPU usage: 27.7%
+Current CPU usage: 18.4%
+Current CPU usage: 18.8%
+
+Monitoring stopped by user.
 ```
+
+## Screenshot
+
+## Code:
+![image](https://github.com/user-attachments/assets/8d7b360a-03de-4b69-8962-1907a814596b)
+
+## Output:
+![image](https://github.com/user-attachments/assets/304a482c-d29a-458f-9408-6dcfe4f958a3)
+
+
+
 
 ## 3. Backup Script
 
@@ -80,24 +105,24 @@ python backup.py /path/to/source /path/to/destination
 ### Example Input and Output
 #### Command:
 ```sh
-python backup.py ./source ./backup
+python backup.py F:\Source F:\Destination
 ```
 
 #### Output:
 ```
-Backed up 'file1.txt' to './backup/file1.txt'
-File 'file2.txt' already exists in destination. Renaming...
-Backed up 'file2.txt' to './backup/file2_20250208_123456.txt'
+Backed up 'file1.txt' to 'F:\Destination\file1.txt'
+Backed up 'file2.txt' to 'F:\Destination\file2.txt'
 ```
 
-If the source directory does not exist, an error is displayed:
-```
-Error: Source directory './source' does not exist.
-```
+## Screenshot
 
-## Error Handling
-- The scripts handle common errors, such as missing directories or invalid input.
-- The CPU monitor includes exception handling to prevent crashes during runtime.
+## Code:
+![image](https://github.com/user-attachments/assets/bef9f69b-5475-425a-b2fe-f96983f656cd)
+
+#### Output:
+![image](https://github.com/user-attachments/assets/cd7b7391-9a93-41a1-a460-88a1f9c925d2)
+
+
 
 ## 🤝 Contributing
 Contributions are welcome! If you'd like to contribute, follow these steps:
